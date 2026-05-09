@@ -1,6 +1,39 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function About(){
+    const [years, setYears] = useState<number>(0);
+    const [percent, setPercent] = useState<number>(0);
+    useEffect(() => {
+        const years = () => {
+            let start = 0;
+            const end = 15;
+            const interval = setInterval(() => {
+                start += 1;
+                setYears(start)
+
+                if(start === end){
+                    clearInterval(interval)
+                }
+            }, 60);
+            return () => clearInterval(interval);
+        }
+        const percent = () => {
+            let start = 0;
+            const end = 100;
+            const interval = setInterval(() => {
+                start += 1;
+                setPercent(start)
+
+                if(start === end){
+                    clearInterval(interval)
+                }
+            }, 10);
+            return () => clearInterval(interval);
+        }
+        years();
+        percent();
+    }, []);
     return(
         <>
             <section className="bg-[#EFF4FF] min-h-screen px-6 py-20 flex items-center justify-center">
@@ -13,7 +46,7 @@ export default function About(){
                         </div>
                         {/* Floating Quote Card */}
                         <div className="absolute bottom-5 -right-5 bg-white px-6 py-5 rounded-2xl shadow-xl w-60 " >
-                            <p className="italic text-[#1D4ED8] text-sm"> “Real recovery is not cookie-cutter. Your goals matter.”</p>
+                            <p className="italic text-[#0037b0] text-sm"> “Real recovery is not cookie-cutter. Your goals matter.”</p>
                         </div>
                     </div>
 
@@ -41,8 +74,8 @@ export default function About(){
                     {/* STATS */}
                         <div className="flex gap-16 pt-12">
                             <div>
-                            <h2 className="text-5xl font-bold text-[#1D4ED8]">
-                                15+
+                            <h2 className="text-5xl font-bold text-[#0037b0]">
+                                {years}+
                             </h2>
                             <p className="text-sm tracking-widest text-gray-600 pt-2">
                                 YEARS EXP.
@@ -50,8 +83,8 @@ export default function About(){
                             </div>
 
                             <div>
-                            <h2 className="text-5xl font-bold text-[#1D4ED8]">
-                                100%
+                            <h2 className="text-5xl font-bold text-[#0037b0]">
+                                {percent}%
                             </h2>
                             <p className="text-sm tracking-widest text-gray-600 pt-2">
                                 ONE-ON-ONE
