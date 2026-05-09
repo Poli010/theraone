@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Navbar(){
     return(
         <>
-            <header className="bg-white/95 border border-gray-200 shadow z-50 py-3 px-5 flex items-center justify-between fixed top-0 left-0 w-full">
+            <header className="bg-white/95 border border-gray-100 shadow z-50 py-3 px-5 flex items-center justify-between fixed top-0 left-0 w-full">
                 <div className="flex items-center">
                      <div className="w-13 h-13">
                         <Image src={`/theraOneLogo.svg`} alt="TheraOne Logo" width={300} height={300} className="h-full w-full object-cover"/>
