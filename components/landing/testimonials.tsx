@@ -76,45 +76,45 @@ export default function Testimonials(){
     ];
     return(
         <>
-            <section className=" min-h-screen flex flex-col items-center justify-center">
-                <h1 className="font-title text-4xl md:text-5xl font-bold text-[#0F172A] mt-20">Patient Success Stories</h1>
-                <div className="overflow-hidden w-full py-4 mt-10">
-                    <div className="flex w-max animate-marquee gap-6">
+            <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-20">
+                <h1 className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] text-center">Patient Success Stories</h1>
+                <div className="overflow-hidden w-full mt-10 space-y-8 sm:space-y-10">
+                    <div className="flex w-max animate-marquee gap-4 sm:gap-6">
                         {/* Duplicate the array for seamless looping */}
                         {[...testimonials, ...testimonials].map((t, index) => (
-                        <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition duration-300 w-100 shrink-0">
+                        <div key={index} className="bg-white rounded-xl p-5 sm:p-8 shadow-sm hover:shadow-xl transition duration-300 w-70 sm:w-87.5 lg:w-100 shrink-0">
                             {/* Stars */}
-                            <div className="flex items-center gap-1 mb-4">
+                            <div className="flex items-center gap-1 mb-3 sm:mb-4">
                                 {Array.from({ length: t.star }).map((_, i) => (
-                                    <FaStar key={i} className="text-yellow-500" />
+                                    <FaStar key={i} className="text-yellow-500 text-sm sm:text-base" />
                                 ))}
                             </div>
-                            <p className="text-gray-600 italic">"{t.comment}"</p>
+                            <p className="text-gray-600 italic text-sm sm:text-base">"{t.comment}"</p>
 
                             <div className="mt-4">
-                                <h1 className="font-semibold">{t.patient_name}</h1>
-                                <p className="text-sm text-gray-500">{t.diagnosed}</p>
+                                <h1 className="font-semibold text-sm sm:text-base">{t.patient_name}</h1>
+                                <p className="text-xs sm:text-sm text-gray-500">{t.diagnosed}</p>
                             </div>
                         </div>
                         ))}
                     </div>
 
                     {/* testimonials 2 */}
-                    <div className="flex w-max animate-marquee2 gap-6 mt-10">
+                    <div className="flex w-max animate-marquee2 gap-4 sm:gap-6">
                         {/* Duplicate the array for seamless looping */}
                         {[...testimonials, ...testimonials].map((t, index) => (
-                        <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition duration-300 w-100 shrink-0">
+                        <div key={index} className="bg-white rounded-xl p-5 sm:p-8 shadow-sm hover:shadow-xl transition duration-300 w-70 sm:w-87.5 lg:w-100 shrink-0">
                             {/* Stars */}
-                            <div className="flex items-center gap-1 mb-4">
+                            <div className="flex items-center gap-1 mb-3 sm:mb-4">
                                 {Array.from({ length: t.star }).map((_, i) => (
-                                    <FaStar key={i} className="text-yellow-500" />
+                                    <FaStar key={i} className="text-yellow-500 text-sm sm:text-base" />
                                 ))}
                             </div>
-                            <p className="text-gray-600 italic">"{t.comment}"</p>
+                            <p className="text-gray-600 italic text-sm sm:text-base">"{t.comment}"</p>
 
                             <div className="mt-4">
-                                <h1 className="font-semibold">{t.patient_name}</h1>
-                                <p className="text-sm text-gray-500">{t.diagnosed}</p>
+                                <h1 className="font-semibold text-sm sm:text-base">{t.patient_name}</h1>
+                                <p className="text-xs sm:text-sm text-gray-500">{t.diagnosed}</p>
                             </div>
                         </div>
                         ))}
