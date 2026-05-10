@@ -8,7 +8,7 @@ export default function Navbar(){
                      <div className="w-13 h-13">
                         <Image src={`/theraOneLogo.svg`} alt="TheraOne Logo" width={300} height={300} className="h-full w-full object-cover"/>
                     </div>
-                    <h1 className="font-title font-bold text-2xl text-[#0037b0]">TheraOne</h1>
+                    <h1 className="font-title font-bold text-2xl text-[#0037b0]">TheraOneMR</h1>
                 </div>
                 <nav className="space-x-8 text-gray-700 font-title font-medium">
                     <a href="#About" className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-[#0037b0] after:transition-all after:duration-300 hover:after:w-full hover:text-[#0037b0]">About</a>

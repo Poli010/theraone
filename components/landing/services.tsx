@@ -27,13 +27,8 @@ export default function Services(){
         },
         {
             icon: <FaBalanceScale className="text-gray-600"/>,
-            title: "Vestibular Rehab",
-            description: "Specialized treatment for dizziness, vertigo, and balance disorders to help you feel steady and confident again."
-        },
-        {
-            icon: <FaHeadSideVirus className="text-gray-600"/>,
-            title: "Concussion Rehab",
-            description: "Comprehensive management for post-concussion symptoms, focusing on a safe and structured return to your daily activities."
+            title: "Vertigo Rehabilitation",
+            description: "Specialized assessment and treatment for BPPV and other balance disorders to help you stop the spinning and feel steady again."
         },
     ]
     return(
@@ -45,7 +40,7 @@ export default function Services(){
                 </div>
                 <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
                     {services.map((s, index) => (
-                        <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300">
+                        <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition duration-300">
                             <div className="bg-[#39b8fd] w-10 h-10 flex items-center justify-center rounded-lg text-white">
                                 {s.icon}
                             </div>
