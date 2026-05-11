@@ -41,9 +41,9 @@ export default function Hero(){
                     <p ref={(ref) => setRef(ref!, 0)} style={{animationDelay: '0s'}} className={`${inView[0] ? 'animate-fade_up' : 'opacity-0'} font-title text-xs sm:text-sm font-medium tracking-[0.2em] text-gray-700`}>PREMIUM RECOVERY NY</p>
                     <h1 ref={(ref) => setRef(ref!, 1)} style={{animationDelay: '0.3s'}} className={`${inView[1] ? 'animate-fade_up' : 'opacity-0'} font-title font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight pt-4 text-[#0f172a]`}>One-on-One Physical Therapy Focused Entirely on You.</h1>
                     <p ref={(ref) => setRef(ref!, 2)} style={{animationDelay: '0.5s'}} className={`${inView[2] ? 'animate-fade_up' : 'opacity-0'} text-sm sm:text-base pt-6 text-gray-700 leading-relaxed max-w-2xl`}>Individualized care for Medicare Part B and cash-based patients in NY. No rushed sessions, no factory lines. Experience the difference of dedicated movement expertise.</p>
-                    <div ref={(ref) => setRef(ref!, 3)} style={{animationDelay: '0.8s'}} className={`${inView[3] ? 'animate-fade_up' : 'opacity-0'} pt-8 flex flex-col sm:flex-row gap-4`}>
-                        <button className="font-title py-3 px-7 bg-[#0037b0] hover:bg-[#142c6c] transition cursor-pointer text-white rounded-md text-[10pt] font-semibold">Book Your Evaluation</button>
-                        <button className="font-title py-3 px-7 bg-gray-100 border border-gray-200 cursor-pointer hover:bg-gray-200 transition rounded-md text-[#0037b0] font-semibold text-[10pt] lg:ml-5">Explore Services</button>
+                    <div ref={(ref) => setRef(ref!, 3)} style={{animationDelay: '0.8s'}} className={`${inView[3] ? 'animate-fade_up' : 'opacity-0'} pt-8 flex flex-col sm:flex-row gap-3 lg:gap-0`}>
+                        <a href="#" className="text-center font-title py-3 px-7 bg-[#0037b0] hover:bg-[#142c6c] transition cursor-pointer text-white rounded-md text-[10pt] font-semibold">Book Your Evaluation</a>
+                        <a href="#Services" className="text-center font-title py-3 px-7 bg-gray-100 border border-gray-200 cursor-pointer hover:bg-gray-200 transition rounded-md text-[#0037b0] font-semibold text-[10pt] lg:ml-5">Explore Services</a>
                     </div>
                 </div>
             </section>

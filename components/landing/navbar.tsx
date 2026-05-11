@@ -25,8 +25,8 @@ export default function Navbar(){
                 <a href="#" className="hidden lg:block bg-[#0037b0] hover:bg-[#142c6c] transition text-white py-2 px-5 text-sm font-bold font-title rounded-2xl">BOOK APPOINTMENT</a>
                 {/* MOBILE SIDEBAR */}
                 <Menu className={` ${isOpen ? 'hidden z-0' : 'block z-20'} lg:hidden z-60`} onClick={() => setIsOpen(true)}/>
-                <div className={`fixed top-0 inset-0 bg-black/10 backdrop-blur-xs z-40 ${isOpen ? 'block' : 'hidden'}`}></div>
-                <div className={`bg-white fixed top-0 right-0 h-full  p-5 w-[90%] transition-all duration-300 ${isOpen ? 'translate-0 opacity-100 z-50' : 'translate-x-100 opacity-0 z-0'}`}>
+                <div className={`fixed top-0 inset-0 lg:hidden bg-black/10 backdrop-blur-xs z-40 ${isOpen ? 'block' : 'hidden'}`}></div>
+                <div className={`bg-white fixed top-0 right-0 h-full lg:hidden p-5 w-[90%] transition-all duration-300 ${isOpen ? 'translate-0 opacity-100 z-50' : 'translate-x-100 opacity-0 z-0'}`}>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <div className="w-13 h-13">
