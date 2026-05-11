@@ -32,7 +32,7 @@ export default function Hero(){
 
     return(
         <>
-            <section id="home" className="relative min-h-screen flex items-center md:pt-20 overflow-hidden">
+            <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image src={`/clinic.png`} alt="hero image" fill priority className="object-cover"/>
                     <div className="absolute inset-0 bg-linear-to-r from-background via-background/60 to-transparent bg-white/80"></div>
