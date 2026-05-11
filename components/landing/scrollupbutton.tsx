@@ -30,10 +30,10 @@ export default function ScrollUpButton() {
         <a
             href="#home"
             className={`
-                fixed bottom-10 right-10 z-50
+                fixed bottom-10 right-6 z-50
                 flex items-center gap-2
                 rounded-full bg-[#0037b0]
-                px-4 py-3 text-white shadow-xl
+                px-3 py-3 text-white shadow-xl
                 transition-all duration-500
                 hover:-translate-y-1 hover:bg-[#002b8a]
                 ${showButton
@@ -42,9 +42,9 @@ export default function ScrollUpButton() {
             `}
         >
             <ChevronUp size={18} />
-            <span className="text-sm font-medium">
+            {/* <span className="text-sm font-medium">
                 Scroll Up
-            </span>
+            </span> */}
         </a>
     );
 }
