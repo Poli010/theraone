@@ -14,7 +14,8 @@ export default function ScrollUpButton() {
             // show after scrolling down 500px
             if (window.scrollY > 500) {
                 setShowButton(true);
-            } else {
+            } 
+            else {
                 setShowButton(false);
             }
         };
@@ -29,7 +30,7 @@ export default function ScrollUpButton() {
         <a
             href="#home"
             className={`
-                fixed bottom-6 right-6 z-50
+                fixed bottom-10 right-10 z-50
                 flex items-center gap-2
                 rounded-full bg-[#0037b0]
                 px-4 py-3 text-white shadow-xl
