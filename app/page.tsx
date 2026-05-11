@@ -6,6 +6,7 @@ import Footer from "@/components/landing/footer";
 import Hero from "@/components/landing/hero";
 import Medicare from "@/components/landing/medicare";
 import Navbar from "@/components/landing/navbar";
+import ScrollUpButton from "@/components/landing/scrollupbutton";
 import Services from "@/components/landing/services";
 import Testimonials from "@/components/landing/testimonials";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Credentials/>
       <Testimonials/>
       <Footer/>
+      <ScrollUpButton/>
     </>
   );
 }

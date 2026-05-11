@@ -76,7 +76,7 @@ export default function Testimonials(){
     ];
     return(
         <>
-            <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-20">
+            <section id="Testimonials" className="min-h-screen flex flex-col items-center justify-center px-6 py-16 sm:py-20">
                 <h1 className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] text-center">Patient Success Stories</h1>
                 <div className="overflow-hidden w-full mt-10 space-y-8 sm:space-y-10">
                     <div className="flex w-max animate-marquee gap-4 sm:gap-6">
