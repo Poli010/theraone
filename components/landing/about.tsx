@@ -69,10 +69,10 @@ export default function About(){
                     <div className="relative w-full flex justify-center">
                         <div ref={(ref) => setRef(ref!, 0)} style={{animationDelay: '0s'}} className={`${inView[0] ? 'animate-fade_in' : 'opacity-0'} w-full max-w-105 h-125 sm:h-150 lg:w-105 lg:h-135 rounded-2xl overflow-hidden shadow-2xl`}>
                             <Image
-                            src="/doc.png"
+                            src="/Professional_Image.jpg"
                             alt="Doctor"
-                            width={800}
-                            height={800}
+                            width={1000}
+                            height={1000}
                             className="w-full h-full object-cover"
                             />
                         </div>
@@ -83,24 +83,19 @@ export default function About(){
                     <div className="max-w-xl text-left">
                         <h1 ref={(ref) => setRef(ref!, 2)} style={{animationDelay: '0.5s'}} className={`${inView[2] ? 'animate-fade_up' : 'opacity-0'} font-title text-4xl sm:text-5xl font-bold leading-tight text-[#0F172A]`}>TheraOne Movement & Recovery</h1>
                         <p ref={(ref) => setRef(ref!, 3)}  style={{animationDelay: '0.8s'}} className={`${inView[3] ? 'animate-fade_up' : 'opacity-0'} pt-6 sm:pt-8 text-gray-600 leading-7 sm:leading-8 text-sm sm:text-base`}>
-                            Physical Therapy should feel personal — not rushed,
-                            divided, or treated like a factory line. Too many
-                            patients spend their sessions sharing their therapist’s
-                            attention with multiple people at once, following the
-                            same repetitive exercises regardless of progress.
+                            Physical therapy should feel personal, convenient, and built around your life—not the other way around.
                         </p>
-                        <p ref={(ref) => setRef(ref!, 4)} style={{animationDelay: '1s'}} className={`${inView[4] ? 'animate-fade_up' : 'opacity-0'} pt-5 sm:pt-6 font-semibold text-[#0F172A] leading-7 sm:leading-8 text-sm sm:text-base`}>
-                            That is not the level of care I believe people deserve.
-                            My approach is different.
+                        <p ref={(ref) => setRef(ref!, 4)} style={{animationDelay: '1s'}} className={`${inView[4] ? 'animate-fade_up' : 'opacity-0'} pt-3 sm:pt-5 text-gray-600 leading-7 sm:leading-8 text-sm sm:text-base`}>
+                            At TheraOne Movement & Recovery, I bring high-quality physical therapy directly to your home, allowing you to receive expert care without the hassle of traveling to a clinic.
                         </p>
-                        <p ref={(ref) => setRef(ref!, 5)} style={{animationDelay: '1.3s'}} className={`${inView[5] ? 'animate-fade_up' : 'opacity-0'} pt-5 sm:pt-6 text-gray-600 leading-7 sm:leading-8 text-sm sm:text-base`}>
-                            Every visit is one-on-one, individualized, and focused
-                            entirely on you. Your treatment evolves as you improve,
-                            because real recovery is not cookie-cutter. You are not
-                            just another time slot here. Your goals, your recovery,
-                            and your quality of care matter.
+                        <p ref={(ref) => setRef(ref!, 5)} style={{animationDelay: '1s'}} className={`${inView[5] ? 'animate-fade_up' : 'opacity-0'} pt-5 sm:pt-5 text-gray-600 leading-7 sm:leading-8 text-sm sm:text-base`}>
+                            Every visit is one-on-one, individualized, and focused entirely on your goals. Whether you're recovering from surgery, managing pain, improving balance, or returning to the activities you love, your treatment is tailored to your needs and progresses with you every step of the way.
                         </p>
-                        <div ref={(ref) => setRef(ref!, 6)} className={` flex justify-start gap-10 sm:gap-16 pt-10 sm:pt-12`}>
+                        <p ref={(ref) => setRef(ref!, 6)} style={{animationDelay: '1s'}} className={`${inView[6] ? 'animate-fade_up' : 'opacity-0'} pt-5 sm:pt-5 font-semibold text-[#0F172A] leading-7 sm:leading-8 text-sm sm:text-base`}>
+                           No crowded waiting rooms. No rushed appointments. Just attentive, hands-on care delivered in the comfort of your own home.
+                        </p>
+
+                        {/* <div ref={(ref) => setRef(ref!, 7)} className={` flex justify-start gap-10 sm:gap-16 pt-10 sm:pt-12`}>
                             <div>
                                 <h2 className="text-4xl sm:text-5xl font-bold text-[#0037b0]">{years}+</h2>
                                 <p className="text-xs sm:text-sm tracking-widest text-gray-600 pt-2">YEARS EXP.</p>
@@ -109,7 +104,7 @@ export default function About(){
                                 <h2 className="text-4xl sm:text-5xl font-bold text-[#0037b0]">{percent}%</h2>
                                 <p className="text-xs sm:text-sm tracking-widest text-gray-600 pt-2">ONE-ON-ONE</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

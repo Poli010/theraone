@@ -21,7 +21,7 @@ export default function Home() {
       <Services/>
       <Medicare/>
       <Credentials/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <Footer/>
       <ScrollUpButton/>
     </>

@@ -39,7 +39,7 @@ export default function Appointment(){
                         <h1 ref={(ref) => setRef(ref!, 0)} style={{animationDelay: '0s'}} className={`${inView[0] ? 'animate-fade_up' : 'opacity-0'} font-title text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#0F172A]`}>Book Your Visit</h1>
                         <p ref={(ref) => setRef(ref!, 1)} style={{animationDelay: '0.3s'}} className={`${inView[1] ? 'animate-fade_up' : 'opacity-0'} pt-6 sm:pt-8 text-gray-600 text-sm sm:text-base max-w-xl mx-auto lg:mx-0`}>Ready to experience one-on-one therapy focused on you? Use our Jane booking system or contact us directly.</p>
                         {/* LOCATION */}
-                        <div ref={(ref) => setRef(ref!, 2)} style={{animationDelay: '0.5s'}} className={`${inView[2] ? 'animate-fade_up' : 'opacity-0'} flex items-center gap-3 mt-5`}>
+                        {/* <div ref={(ref) => setRef(ref!, 2)} style={{animationDelay: '0.5s'}} className={`${inView[2] ? 'animate-fade_up' : 'opacity-0'} flex items-center gap-3 mt-5`}>
                             <div className="bg-gray-200 flex items-center justify-center w-10 h-10 rounded-full">
                                 <MapPin size={20} className="text-[#0037b0]" />
                             </div>
@@ -47,7 +47,7 @@ export default function Appointment(){
                                 <h3 className="font-title font-semibold">Location</h3>
                                 <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">123 Health Way, New York, NY 10001</p>
                             </div>
-                        </div>
+                        </div> */}
                         {/* PHONE */}
                         <div ref={(ref) => setRef(ref!, 3)} style={{animationDelay: '0.8s'}} className={`${inView[3] ? 'animate-fade_up' : 'opacity-0'} flex items-center gap-3 mt-5`}>
                             <div className="bg-gray-200 flex items-center justify-center w-10 h-10 rounded-full">
@@ -55,7 +55,7 @@ export default function Appointment(){
                             </div>
                             <div >
                                 <h3 className="font-title font-semibold">Phone</h3>
-                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">(212) 555-0198</p>
+                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">347-842-6525</p>
                             </div>
                         </div>
                         {/* EMAIL */}
@@ -65,11 +65,11 @@ export default function Appointment(){
                             </div>
                             <div >
                                 <h3 className="font-title font-semibold">Email</h3>
-                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">care@theraone.com</p>
+                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">daniellevalerietabelcasio@gmail.com</p>
                             </div>
                         </div>
                         <div ref={(ref) => setRef(ref!, 5)} style={{animationDelay: '1.3s'}} className={`${inView[5] ? 'animate-fade_up' : 'opacity-0'} lg:w-60`}>
-                             <a href="#" className="mt-5 flex items-center gap-3 justify-center py-3 text-white font-title text-sm font-semibold bg-[#0037b0] rounded-md hover:bg-[#142c6c]  transition">Book with Jane <Calendar size={20} strokeWidth={2}/></a>
+                             <a href="https://theraonemr.janeapp.com/#/staff_member/1/treatment/4" target="_blank" className="mt-5 flex items-center gap-3 justify-center py-3 text-white font-title text-sm font-semibold bg-[#0037b0] rounded-md hover:bg-[#142c6c]  transition">Book with Jane <Calendar size={20} strokeWidth={2}/></a>
                         </div>
                        
                     </div>

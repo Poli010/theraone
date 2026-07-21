@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FaBriefcaseMedical, FaRegCheckCircle } from "react-icons/fa";
 import { HiCash } from "react-icons/hi";
@@ -30,10 +31,48 @@ export default function Medicare(){
     const setRef = (ref: HTMLDivElement, index: number) => {
         refs.current[index] = ref;
     }
+
+    const partner = [
+        {
+            name: "Aetna",
+            src: '/logo/aetna.png'
+        },
+        {
+            name: "Cigna",
+            src: '/logo/Cigna_crop.jpeg'
+        },
+       {
+            name: "Emblem Health",
+            src: '/logo/Emblemhealth.jpeg'
+        },
+        {
+            name: "United Health Care",
+            src: '/logo/UHC.png'
+        },
+    ];
     return(
         <>
-            <section id="Medicare" className="bg-white px-6 py-16 sm:py-20 lg:py-30">
-                <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center">
+            <section id="Insurance" className="bg-white px-6 py-16 sm:py-20 lg:py-30">
+                {/* Insurance Logos */}
+                <h1 className="font-title text-center text-3xl font-bold text-[#0F172A] sm:text-4xl md:text-5xl"> We Accept</h1>
+                <p className="mt-3 text-center text-slate-500">  We accept the following insurance plans</p>
+                <div className="mt-10 w-full overflow-hidden">
+                    <div className="flex w-max animate-marquee items-center gap-6 sm:gap-10 lg:gap-16">
+                        {/* Duplicate the array for seamless looping */}
+                        {[...partner, ...partner].map((t, index) => (
+                            <div key={`${t.name}-${index}`} className="flex w-70 h-50 items-center justify-center rounded-xl bg-white transition duration-200 ">
+                                <Image
+                                    src={t.src}
+                                    alt={t.name}
+                                    width={800}
+                                    height={800}
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-stretch lg:gap-5 xl:gap-0 mt-10">
                     <div ref={(ref) => setRef(ref!, 0)} style={{animationDelay: '0s'}} className={`${inView[0] ? 'animate-fade_up' : 'opacity-0'} relative w-full max-w-2xl mx-auto bg-[#213145] rounded-lg shadow-xl p-8 sm:p-12 lg:p-15 overflow-hidden`}>
                         <FaBriefcaseMedical className="text-white absolute right-4 sm:right-10 lg:right-20 top-6 sm:top-10 lg:top-15 opacity-10 sm:opacity-20" size={160}/>
                         <div className="bg-[#0037b0]/20 w-fit px-4 py-1 rounded-lg text-center">
