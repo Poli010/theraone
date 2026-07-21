@@ -96,12 +96,12 @@ export default function Medicare(){
                         <p className="text-[#cad3ff] leading-relaxed text-sm sm:text-base mt-5 max-w-2xl">For patients without Medicare or those seeking elective wellness care, we offer transparent, direct-pay rates.</p>
                         <div className="mt-6 space-y-10">
                             <div className="flex items-center justify-between border-b border-[#cad3ff]/20 px-1 text-[#cad3ff] text-sm">
-                                <p>Initial Evaluation</p>
-                                <p>$150</p>
+                                <p>Initial and  Re-Evaluation</p>
+                                <p>$100</p>
                             </div>
                             <div className="flex items-center justify-between border-b border-[#cad3ff]/20 px-1 text-[#cad3ff] text-sm">
                                 <p>Follow-up Session</p>
-                                <p>$125</p>
+                                <p>$90</p>
                             </div>
                             <div className="flex items-center justify-between border-b border-[#cad3ff]/20 px-1 text-[#cad3ff] text-sm">
                                 <p>Welness Consultation</p>

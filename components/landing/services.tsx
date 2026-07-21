@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { CiMedicalCase } from "react-icons/ci";
-import { FaBalanceScale, FaBriefcaseMedical, FaHeadSideVirus, FaWalking } from "react-icons/fa";
+import { FaBalanceScale, FaBriefcaseMedical, FaHeadSideVirus, FaUserGraduate, FaWalking } from "react-icons/fa";
 import { FaBone } from "react-icons/fa6";
+import { GiWeightLiftingUp } from "react-icons/gi";
 import { PiBandaidsFill } from "react-icons/pi";
 
 export default function Services(){
@@ -31,6 +32,11 @@ export default function Services(){
             title: "Vertigo Rehabilitation",
             description: "Specialized assessment and treatment for BPPV and other balance disorders to help you stop the spinning and feel steady again."
         },
+            {
+        icon: <GiWeightLiftingUp className="text-gray-600" />,
+        title: "Professional Training",
+        description: "Individualized therapeutic exercise programs designed to improve strength, mobility, endurance, and overall physical performance."
+    }
     ]
     // ANIMATION SCROLL TRIGGER
     const [inView, setInView] = useState<boolean[]>([]);
