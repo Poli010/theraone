@@ -35,7 +35,7 @@ export default function Services(){
             {
         icon: <GiWeightLiftingUp className="text-gray-600" />,
         title: "Professional Training",
-        description: "Individualized therapeutic exercise programs designed to improve strength, mobility, endurance, and overall physical performance."
+        description: "Personalized fitness coaching focused on improving strength, mobility, endurance, and overall health through customized exercise programs tailored to your goals and fitness level."
     }
     ]
     // ANIMATION SCROLL TRIGGER
