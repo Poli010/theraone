@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer(){
@@ -10,10 +11,10 @@ export default function Footer(){
                             <h1 className="text-white font-title font-bold text-2xl sm:text-3xl">TheraOne Movement & Recovery</h1>
                             <p className="text-[#cad3ff] text-sm sm:text-base">Premium, one-on-one movement and recovery care focused on your unique goals.</p>
                         </div>
-                        <div className="text-[#cad3ff] flex items-center gap-6 md:justify-end">
-                            {/* <a href="#" className="hover:text-white transition"><FaFacebook size={20}/></a>
-                            <a href="#" className="hover:text-white transition"><FaInstagram size={20}/></a> */}
-                            <a href="https://www.linkedin.com/in/danielle-valerie-tabel-casio-5290a241b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" className="flex items-center gap-1 hover:text-white transition">LinkedIn<FaLinkedin size={20}/></a>
+                        <div className="text-[#cad3ff] flex items-center gap-3 md:justify-end">
+                            {/* <a href="#" className="hover:text-white transition"><FaFacebook size={20}/></a> */}
+                            <a href="mailto:theraonemr@gmail.com" target="_blank" className="hover:text-white transition"><Mail size={20}/></a>
+                            <a href="https://www.linkedin.com/in/danielle-valerie-tabel-casio-5290a241b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" className="flex items-center gap-1 hover:text-white transition"><FaLinkedin size={20}/></a>
                         </div>
                     </div>
                     <div className="border-t border-[#cad3ff]/30 mt-8"></div>

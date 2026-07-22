@@ -65,7 +65,7 @@ export default function Appointment(){
                             </div>
                             <div >
                                 <h3 className="font-title font-semibold">Email</h3>
-                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">daniellevalerietabelcasio@gmail.com</p>
+                                <p className="text-[10pt] tracking-wide font-desc text-[#0F172A]">theraonemr@gmail.com</p>
                             </div>
                         </div>
                         <div ref={(ref) => setRef(ref!, 5)} style={{animationDelay: '1.3s'}} className={`${inView[5] ? 'animate-fade_up' : 'opacity-0'} lg:w-60`}>
